@@ -1,0 +1,42 @@
+<head>
+   <title>ShreyaApp</title>
+</head>
+ 
+<body>
+
+	<h1 style="text-align:center;"> ShreyaApp </h1>
+	{{#if currentUser}}
+		{{> home}}
+		<div class="comment-section">
+			{{> commentsBox id='xyz'}}
+		</div>
+		<div  id="xyz"></div>
+	
+    {{else}}
+		{{> register}}
+		{{> login}}		
+   {{/if}}
+</body>
+
+<template name = "register">
+   <h2 style="font-size:100%;" >REGISTER:</h2>
+    
+   <form>
+      <input type = "email" name = "registerEmail"  size="60"><br>
+      <input type = "password" name = "registerPassword"  size="60"><br>
+      <input type = "submit" value = "Register"><br><br>
+   </form>
+</template>
+
+<template name = "login">
+   <h2 style="font-size:100%; ">LOGIN:</h2>
+   <form>
+      <input type = "email" name = "loginEmail"  size="60"><br>
+      <input type = "password" name="loginPassword"  size="60"><br>
+      <input type = "submit" value = "Login"><br><br>
+   </form>
+</template>
+
+<template name = "home">
+   <button class = "logout" style= "margin: 1px 4px;" >Logout</button>
+</template>

@@ -1,0 +1,27 @@
+	/* CSS declarations go here */
+	.comments-box .img-avatar {
+	  min-width: 5px;
+	  min-height: 5px;
+	}
+
+	body{
+		margin-left: 100px;
+		margin-top:50px;
+
+	}
+
+	input[type=submit] {
+		background-color: lightgrey;
+	}
+
+	.comments-box .comments {
+	  padding-top: 0.5em;
+	  transition: 1s background-color;
+	}
+	
+	.comments-box {
+	  max-width: 30em;
+	  padding: 0em;
+	}
+
+
